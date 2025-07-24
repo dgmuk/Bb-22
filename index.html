@@ -1,1 +1,167 @@
-1
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гайд: Протокол действий после срыва</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Исправление для Google Sites */
+        html, body {
+            height: auto !important;
+            min-height: 1px !important;
+            overflow: visible !important; 
+        }
+
+        /* Анимация для плавного появления блоков */
+        .fade-in-item {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Интерактивное свечение карточек */
+        .interactive-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .interactive-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(239, 68, 68, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <div id="main-container" class="container mx-auto max-w-4xl p-4 sm:p-8">
+        
+        <!-- HERO SECTION -->
+        <header class="text-center my-12 sm:my-20 fade-in-item">
+            <h1 class="text-4xl sm:text-6xl font-black text-white leading-tight tracking-tight">
+                ПРОТОКОЛ ДЕЙСТВИЙ: ЧТО ДЕЛАТЬ ПОСЛЕ СРЫВА
+            </h1>
+            <p class="mt-4 text-xl text-gray-400">Твоя инструкция по возвращению в строй</p>
+        </header>
+        
+        <!-- Вступительный блок -->
+        <div class="bg-gray-800 rounded-2xl p-6 mb-12 text-center fade-in-item" style="animation-delay: 100ms;">
+             <p class="text-lg text-gray-300">Срывы это не провал. Это часть пути. То, как ты реагируешь на срыв, определяет твой итоговый результат. Этот гайд твой аварийный протокол. Изучи его.</p>
+        </div>
+
+        <!-- Блоки с контентом -->
+        <main class="space-y-12">
+            
+            <!-- Секция 1: Диагностика -->
+            <div class="bg-gray-800 rounded-2xl p-6 fade-in-item interactive-card" style="animation-delay: 200ms;">
+                <h3 class="font-bold text-2xl text-red-400 mb-3 flex items-center"><span class="text-3xl mr-3">🧠</span> ШАГ 1: ДИАГНОСТИКА. ПОЧЕМУ ЭТО ПРОИЗОШЛО?</h3>
+                <p class="text-gray-300">Прежде чем лечить, нужно понять причину. Запомни: ни одна из этих причин не про твою «слабость».</p>
+                <div class="mt-4 bg-gray-700/50 p-4 rounded-lg">
+                    <p class="font-semibold text-white mb-2">5 главных триггеров срыва:</p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="p-2 rounded-lg hover:bg-gray-600/50 transition-colors"><span class="font-bold">Стресс:</span> Мозг ищет самый быстрый и простой способ получить дозу дофамина. Еда - самый доступный.</li>
+                        <li class="p-2 rounded-lg hover:bg-gray-600/50 transition-colors"><span class="font-bold">Усталость:</span> Когда ты не выспался, тело переходит в режим энергосбережения и требует быстрых калорий.</li>
+                        <li class="p-2 rounded-lg hover:bg-gray-600/50 transition-colors"><span class="font-bold">Жёсткие запреты:</span> Чем сильнее ты себе что-то запрещаешь, тем отчаяннее мозг этого хочет. Эффект «запретного плода».</li>
+                        <li class="p-2 rounded-lg hover:bg-gray-600/50 transition-colors"><span class="font-bold">Эмоции:</span> Ты ешь не потому, что голоден, а потому, что тебе скучно, одиноко, тревожно или грустно.</li>
+                        <li class="p-2 rounded-lg hover:bg-gray-600/50 transition-colors"><span class="font-bold">Отключённость:</span> Ты так замотался, что перестал слышать реальные сигналы своего тела (голод, жажда, усталость).</li>
+                    </ul>
+                </div>
+                <p class="mt-4 font-semibold text-white">Это не лень. Это старая, въевшаяся стратегия твоего мозга. Мы её меняем.</p>
+            </div>
+
+            <!-- Секция 2: Протокол действий -->
+            <div class="bg-gray-800 rounded-2xl p-6 fade-in-item interactive-card" style="animation-delay: 300ms;">
+                <h3 class="font-bold text-2xl text-teal-400 mb-3 flex items-center"><span class="text-3xl mr-3">⚙️</span> ШАГ 2: АВАРИЙНЫЙ ПРОТОКОЛ. 4 ДЕЙСТВИЯ СРАЗУ ПОСЛЕ СРЫВА.</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                    <div class="bg-gray-700/50 p-4 rounded-lg hover:bg-gray-700 transition-colors">
+                        <p class="font-bold text-2xl text-teal-400">1.</p>
+                        <h4 class="font-semibold text-white text-lg mt-1">ПРИЗНАЙ ФАКТ.</h4>
+                        <p class="text-gray-400 mt-1">Без драмы. Без самобичевания. Просто скажи себе: «Да, это был срыв. Факт зафиксирован».</p>
+                    </div>
+                    <div class="bg-gray-700/50 p-4 rounded-lg hover:bg-gray-700 transition-colors">
+                        <p class="font-bold text-2xl text-teal-400">2.</p>
+                        <h4 class="font-semibold text-white text-lg mt-1">СБРОСЬ НАПРЯЖЕНИЕ.</h4>
+                        <p class="text-gray-400 mt-1">Выпей стакан чистой воды. Сделай 3 медленных, глубоких вдоха и выдоха. Это физически сбрасывает напряжение.</p>
+                    </div>
+                    <div class="bg-gray-700/50 p-4 rounded-lg hover:bg-gray-700 transition-colors">
+                        <p class="font-bold text-2xl text-teal-400">3.</p>
+                        <h4 class="font-semibold text-white text-lg mt-1">НАЙДИ ПРИЧИНУ.</h4>
+                        <p class="text-gray-400 mt-1">Задай себе один честный вопрос: «Что я чувствовал за 5 минут ДО того, как это началось?».</p>
+                    </div>
+                    <div class="bg-gray-700/50 p-4 rounded-lg hover:bg-gray-700 transition-colors">
+                        <p class="font-bold text-2xl text-teal-400">4.</p>
+                        <h4 class="font-semibold text-white text-lg mt-1">ВЕРНИСЬ В СТРОЙ.</h4>
+                        <p class="text-gray-400 mt-1">Немедленно. Не жди понедельника. Следующий приём пищи строго по твоему плану.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Секция 3: Мышление -->
+            <div class="border-2 border-cyan-500 rounded-2xl p-6 fade-in-item" style="animation-delay: 400ms;">
+                <h3 class="font-bold text-2xl text-cyan-400 mb-4">ГЛАВНОЕ: ОТЛИЧИЕ СРЫВА ОТ ПРОВАЛА</h3>
+                <p class="text-lg text-gray-300">Это то, что отличает победителя от проигравшего.</p>
+                <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <p class="font-bold text-xl text-white">СРЫВ — это СОБЫТИЕ.</p>
+                        <p class="text-gray-400">Единичный эпизод. Отклонение от маршрута.</p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-xl text-red-400">ПРОВАЛ — это РЕШЕНИЕ.</p>
+                        <p class="text-gray-400">Решение больше не возвращаться на маршрут.</p>
+                    </div>
+                </div>
+                <p class="mt-4 font-semibold text-white text-lg">Если ты продолжаешь идти после срыва, он становится полезным опытом. Если ты сдаёшься, он превращается в откат. Твоя задача никогда не принимать решение остановиться.</p>
+            </div>
+
+            <!-- Финальный блок -->
+            <div class="text-center py-12 fade-in-item" style="animation-delay: 500ms;">
+                <p class="text-2xl font-bold text-white italic">"Трансформация это не прямая линия к финишу. Это путь с ямами и ухабами. Победа не в том, чтобы никогда не падать. Победа в том, чтобы каждый раз, когда ты упал, вставать на один раз больше."</p>
+                <p class="mt-4 text-xl text-gray-400">Ты уже на этом пути. Продолжай.</p>
+            </div>
+        </main>
+
+        <!-- Подвал -->
+        <footer class="text-center mt-12 border-t border-gray-700 pt-6">
+            <p class="text-sm text-gray-500">Материал подготовлен в рамках программы трансформации "Body Balance". Модуль 3.</p>
+        </footer>
+
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('main-container');
+
+            if ('ResizeObserver' in window) {
+                const observer = new ResizeObserver(entries => {
+                    if (entries.length > 0) {
+                        const height = entries[0].target.scrollHeight;
+                        document.body.style.height = height + 'px';
+                        document.documentElement.style.height = height + 'px';
+                    }
+                });
+                if (container) {
+                    observer.observe(container);
+                }
+            } else {
+                const resizeFallback = () => {
+                    if(container) document.body.style.height = container.scrollHeight + 'px';
+                };
+                setInterval(resizeFallback, 300);
+                window.addEventListener('resize', resizeFallback);
+                resizeFallback();
+            }
+        });
+    </script>
+</body>
+</html>
